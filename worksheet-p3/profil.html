@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi Game Saya</title>
+</head>
+<body>
+
+  <header>
+    <h1>Koleksi Game Saya</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-game">Daftar Game</a></li>
+        <li><a href="#tambah-game">Tambah Game</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="daftar-game">
+      <h2>Daftar Game</h2>
+      <p>Game yang pernah saya mainkan, lengkap dengan rating dari saya.</p>
+
+      <table>
+        <caption>Daftar game yang pernah saya mainkan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul</th>
+            <th scope="col">Pengembang</th>
+            <th scope="col">Tahun Rilis</th>
+            <th scope="col">Rating Saya (1-10)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">The Witcher 3: Wild Hunt</th>
+            <td>CD Projekt Red</td>
+            <td>2015</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th scope="row">Minecraft</th>
+            <td>Mojang Studios</td>
+            <td>2011</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th scope="row">Hollow Knight</th>
+            <td>Team Cherry</td>
+            <td>2017</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th scope="row">Stardew Valley</th>
+            <td>ConcernedApe</td>
+            <td>2016</td>
+            <td>8</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure>
+        <img src="koleksi-game-1.webp"
+             alt="Papan gelap berbingkai merah bertuliskan Koleksi Game Saya, sebagai gambar contoh koleksi game"
+             width="640" height="360" loading="lazy">
+        <figcaption>Contoh gambar koleksi game saya.</figcaption>
+      </figure>
+    </section>
+
+    <section id="tambah-game">
+      <h2>Tambah Game</h2>
+
+      <form action="/simpan" method="post">
+        <p>
+          <label for="judul">Judul game</label>
+          <input type="text" id="judul" name="judul" required>
+        </p>
+        <p>
+          <label for="pengembang">Pengembang</label>
+          <input type="text" id="pengembang" name="pengembang" required>
+        </p>
+        <p>
+          <label for="tahun-rilis">Tahun rilis</label>
+          <input type="number" id="tahun-rilis" name="tahun-rilis" min="1970" max="2026" required>
+        </p>
+        <p>
+          <label for="rating">Rating saya (1-10)</label>
+          <input type="number" id="rating" name="rating" min="1" max="10" required>
+        </p>
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <p>Davino Radhe · 25523163 · 2026</p>
+  </footer>
+
+</body>
+</html>
